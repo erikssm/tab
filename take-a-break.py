@@ -4,6 +4,7 @@ import pynotify
 import subprocess
 import time
 
+#test
 if __name__ == "__main__":
 	if not pynotify.init("icon-summary-body"):
 	    sys.exit(1)
