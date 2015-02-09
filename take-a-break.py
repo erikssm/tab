@@ -12,16 +12,17 @@ if __name__ == "__main__":
 	timeout_sec 			= 60.0 # in SECONDS	
 	idle_treshold			= 15.0 # in minutes
 	notify_minutes	 		= 60.0 # in minutes
-	mins_passed 			= 0.1
+
 
 	# main loop
+	mins_passed = 0.1
 	while (True):
 		# sleep, count minutes slept
 		time.sleep(timeout_sec)		
 		mins_passed = mins_passed + ( timeout_sec / 60.0 ) # convert from sec to minutes
 		print '\nminutes passed: ' + str(mins_passed)
 
-		# if idle last N minutes then reset timer
+		# if idle last 'idle_treshold' minutes then reset timer
 		p = subprocess.Popen(['xprintidle'], stdout=subprocess.PIPE) # get idle time from system
 		p.wait()
 		idle_mins = float(p.stdout.read()) / 1000 / 60 # convert from miliseconds to minutes
