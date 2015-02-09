@@ -9,7 +9,7 @@ if __name__ == "__main__":
 	    sys.exit(1)
 
 	# init default variables
-	default_timeout_sec 		= 60.0 # seconds	
+	default_timeout_sec 		= 60.0 # !SECONDS	
 	default_idle_treshold		= 15.0 # minutes
 	notification_treshold_minutes 	= 60.0 # minutes
 	mins_passed 			= 0.1
