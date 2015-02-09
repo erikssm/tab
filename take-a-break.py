@@ -34,9 +34,9 @@ if __name__ == "__main__":
 		# show notification every hour ( or so )
 		if mins_passed > notification_treshold_minutes:
 			n = pynotify.Notification(
-			    "Take A Break",
-			    "Remmember to take a 5 min break every hour",
-			    "dialog-information") # notification-message-im
+						    "Take A Break",
+						    "Remmember to take a 5 min break every hour",
+						    "dialog-information") # notification-message-im
 			n.show()
 			mins_passed = 0.1
 
