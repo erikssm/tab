@@ -1,10 +1,12 @@
+#!/usr/bin/python
+
+
+
 #      requirements:
 #
 #           xprintidle ( apt-get install xprintidle )
 #           python-notify  ( apt-get install python-notify )
 #
-
-#!/usr/bin/python
 import sys
 import pynotify
 import subprocess
